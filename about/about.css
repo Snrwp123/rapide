@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-image: url(../assets/background/Ellipse\ 3.png);
+
+}
+body {
+    font-family: "Marcellus", sans-serif;
+    font-family: "Lato", sans-serif;
+}
+
+/* About Section Styling */
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    max-width: 98%;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Title and Subtitle Styling */
+.about-title {
+    font-size: 60px;
+    font-family: "Marcellus", sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #47301F;
+}
+
+.about-subtitle {
+    max-width: 70%;
+    font-size: 28px;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    margin: 50px auto 20px;
+    line-height: 1.6;
+}
+
+.about-bold {
+    font-weight: bold;
+}
+
+/* Image Styling */
+.about-image {
+    width: 97%;
+    height: 390px;
+    margin: auto;
+    padding: 0px 0px 0px 70px;
+    border-radius: 25px;
+    background-image: url(../assets/about/OurStory.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.story-image{
+    text-align: left;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 100%;
+    width: 30%;
+}
+
+.story-heading {
+    font-size: 40px;
+    font-family: "Marcellus", sans-serif;
+    font-weight: 400;
+}
+
+.story-discription{
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+
+/* Vission & Mission Section... */
+.vision-mission-section {
+  padding: 60px 0px;
+}
+
+.vm-container {
+  display: flex;
+  max-width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Left Image */
+.vm-image {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.vm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Content */
+.vm-content {
+  flex: 1 1 500px;
+  padding: 0px 0px 0px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vm-block {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.vm-block h2 {
+  font-size: 2.5rem;
+  font-family: "Marcellus", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.vm-block p {
+  font-size: 1.3rem;
+  color: #444;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+
+/* Philosophy & Values Section */
+.philosophy-section {
+  text-align: start;
+  padding: 60px 0px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.philosophy-section h2 {
+  font-family: "Marcellus", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.philosophy-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  background-color: #ccc;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: sepia(1.9);
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0px 0px 50px 50px;
+  color: white;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  max-width: 70%;
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 1.4;
+  color: #f0f0f0;
+  max-width: 80%;
+}
+.card-content-five{
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.card-content-five span{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+.card-5{
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+}
+
+/* Ground Breaking Section */
+.groundbreaking-section {
+  position: relative;
+  background-image: url("../assets/about/Groundbreaking.png");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #cccccc;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 60px 20px;
+  color: #fff;
+  max-width: 95%;
+  margin: auto;
+}
+
+/* semi-transparent background for text readability */
+.groundbreaking-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 0.027, 0.027);
+}
+
+.overlay-content {
+  position: relative;
+  max-width: 650px;
+  margin-left: 30px;
+  z-index: 1;
+}
+
+.overlay-content h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 30px;
+  font-family: "Marcellus", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.features-list li {
+  position: relative;
+  background-color: #987A5C;
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 12px 20px 12px 60px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  font-weight: 600;
+  width: max-content;
+}
+
+.features-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+
+/* Responsive design for main section */
+@media screen and (max-width: 768px) {
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-subtitle {
+        font-size: 16px;
+    }
+
+    .about-item p {
+        font-size: 0.95rem;
+    }
+
+    .vm-container {
+      flex-direction: column;
+    }
+
+    .vm-content {
+      padding: 30px 20px;
+    }
+
+    .vm-block h2 {
+      font-size: 1.5rem;
+    }
+
+    .vm-block p {
+       font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-image {
+      background-size: fixed;
+      padding: 0 0 0 20px;
+      background-repeat: no-repeat;
+      height: 80vh;
+    }
+    .about-title {
+      font-size: 32px;
+    }
+
+    .about-subtitle {
+      font-size: 20px;
+      margin: 0px auto 0px;
+      max-width: 80%;
+    }
+
+    .story-image{
+      width: 80% !important;
+    }
+
+    .story-discription {
+      font-size: 14px;
+    }
+    
+    .overlay-content {
+      margin-left: 0px;
+    }
+}
+
+/* Responsive design for Philosophy & Values Section */
+@media (max-width: 768px) {
+  .philosophy-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+  .card-content-five{
+    max-width: 800px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .philosophy-section {
+    padding: 40px 15px;
+  }
+
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-content p {
+    font-size: 1.3rem;
+  }
+
+  .card-content-five {
+    line-height: 1;
+    font-size: 20px;
+  }
+}
+
+/*  Responsive Design for Ground Breaking Section */
+@media (max-width: 992px) {
+  .groundbreaking-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    order: 2;
+  }
+
+  .image-content {
+    order: 1;
+  }
+
+  .features-list li {
+    text-align: left;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .features-list li {
+    font-size: 0.95rem;
+    padding: 10px 15px 10px 40px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .overlay-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .features-list li {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .overlay-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .features-list li {
+    font-size: 0.95rem;
+    padding: 10px 15px 10px 40px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .overlay-content{
+    text-align: start !important;
+  }
+
+  .groundbreaking-section {
+    padding: 80px 10px;
+  }
+    
+  .features-list li {
+    font-size: 0.64rem;
+    padding-left: 30px;
+  }
+
+  .features-list li::before {
+    font-size: 1rem;
+    left: 10px;
+  }
+}

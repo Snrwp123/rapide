@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Marcellus", sans-serif;
+    font-family: "Lato", sans-serif;  
+}
+main{
+    background-image: url(../assets/background/Ellipse\ 3.png);
+
+}
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    max-width: 98%;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Title and Subtitle Styling */
+.about-title {
+    font-size: 60px;
+    font-family: "Marcellus", sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #47301F;
+}
+
+.about-subtitle {
+    max-width: 75%;
+    font-size: 28px;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    margin: 50px auto 20px;
+    line-height: 1.6;
+}
+.team-section {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:5px;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: min(90%, 1000px); 
+}
+
+.team-container h1 {
+  font-family: "Marcellus", serif;
+  font-size: clamp(28px, 4vw, 40px); 
+  color: #47301F;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.team-container p {
+  font-size: clamp(14px, 2vw, 20px);
+  color: #47301F;
+  line-height: 1.4;
+  max-width: 60ch; 
+  
+}
+
+  /* PROFILE SECTION */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  min-height: 100vh;
+  padding: 4vw 6vw;
+}
+
+/* MAIN CONTAINER (TEXT + IMAGE) */
+.profile-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* LEFT SIDE TEXT */
+.profile-info {
+  flex: 1.1;
+  color: #2a1c10;
+}
+
+.profile-info h1 {
+  font-family: "lato", serif;
+  font-size: clamp(40px, 60px, 70px);
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #2a1c10;
+}
+
+.profile-info h4 {
+  font-size: clamp(20px, 25, 30px);
+  font-weight: 400;
+  color: #6a5648;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+  #profile-bio p,
+    #profile-bottom p {
+      font-size: 1.2rem;
+      margin-bottom: 1.2em;
+      text-align: unset;
+      color: #47301F;
+      line-height: 1.2;
+      font-weight: 500;
+    }
+.profile-info p {
+  font-size: clamp(13px, 1.1vw, 15px);
+  color: #3a2a1f;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  text-align: justify;
+  max-width: 90%;
+}
+
+/* RIGHT SIDE IMAGE */
+.profile-image {
+  flex: 0.9;
+  display: flex;
+  justify-content: start;
+  height: 95vh;
+}
+
+.profile-image img {
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+/* TEAM THUMBNAILS (BELOW PROFILE) */
+.profile-thumbs {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+/* ACHIEVEMENTS SECTION */
+.achievements-section {
+  padding: 6vh 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN TITLE */
+.achievements-title {
+  font-family: "Marcellus", serif;
+  font-size: clamp(40px, 6vw, 100px);
+  letter-spacing: 2px;
+  line-height: 0.7em;
+  color: rgba(121, 113, 106, 0.3);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* CONTAINER */
+.achievements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: min(850px, 90%);
+}
+
+/* INDIVIDUAL CARDS */
+.achievement-card {
+  background: #ffffff;
+  color: #47301F;
+  padding: 1em 4em;
+  border-radius: 12px;
+  border: 2px solid rgb(202, 202, 202);
+  font-size: clamp(16px, 18px, 20px);
+  line-height: 1.6;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.achievement-card:hover {
+  transform: translateY(-4px);
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info {
+    order: 2;
+  }
+
+  .profile-image {
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  .profile-info p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .achievement-card {
+    padding: 1rem;
+  }
+  .profile-info h1 {
+    font-size: clamp(20px, 30px, 40px);
+  }
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../layout/layout.css">
+  <link rel="stylesheet" href="./profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>OUR TEAM</title>
+</head>
+
+<body>
+  <!-- Top to buttom button -->
+    <button id="scrollTopBtn">↑</button>
+  <!-- navbar -->
+  <section>
+    <header>
+      <img src="../assets/logos/logo.png" alt="Logo" />
+      <button class="menu-toggle">☰</button>
+    </header>
+    <div class="side-menu" id="sideMenu">
+      <a href="../index.html">HOME</a>
+      <!--<a href="../about/about.html">ABOUT</a>-->
+      <!--<a href="../experience/experience.html">EXPERIENCES</a>-->
+      <!--<a href="../team/team.html">OUR TEAM</a>-->
+      <!-- <a href="../membership/member.html">MEMBERSHIP</a> -->
+      <a href="../corporates/corporate.html">CORPORATES</a>
+      <a href="../faq/faq.html">FAQ</a>
+      <a href="../contact/contact.html">CONTACT US</a>
+      <a href="#" class="quiz-btn lato-font">TAKE OUR QUIZ</a>
+    </div>
+  </section>
+  <!-- main gradient Background image -->
+  <main>
+    <!-- team hero-section -->
+
+    <main>
+
+      <!-- TEAM HEADER -->
+      <section class="about-section">
+        <div class="about-container">
+          <h1 class="about-title">OUR TEAM</h1>
+
+        </div>
+      </section>
+
+      <!-- PROFILE SECTION -->
+      <section class="profile-section">
+        <div class="profile-container">
+          <!-- LEFT TEXT SIDE -->
+          <div class="profile-info">
+            <h1 id="profile-name"></h1>
+            <h4 id="profile-title"></h4>
+            <div id="profile-bio"></div>
+          </div>
+
+          <!-- RIGHT IMAGE SIDE -->
+          <div class="profile-image">
+            <img id="profile-img" src alt="Profile" />
+          </div>
+        </div>
+
+        <!-- Bottom Paragraphs -->
+        <div id="profile-bottom"></div>
+      </section>
+
+      <!-- ACHIEVEMENT SECTION -->
+      <section class="achievements-section">
+        <h2 class="achievements-title">ACHIEVEMENTS</h2>
+
+        <div class="achievements-container">
+          <div class="achievement-card">
+            Over 18 years of experience as a leader of various teams. He was
+            always intrigued to work on challenging projects and so gained key
+            proficiencies of physiotherapist during this time.
+          </div>
+
+          <div class="achievement-card">
+            First to set up physiotherapy services in primary care under the
+            National Healthcare Group Polyclinics in 2008.
+          </div>
+
+          <div class="achievement-card">
+            Awarded the Singapore Ministry of Health’s Healthcare Management
+            Development Programme (HMDP) scholarship in 2012 to undertake
+            certification in Orthopaedic Manual Therapy from Manual Concepts
+            at
+            Curtin University, Australia.
+          </div>
+
+          <div class="achievement-card">
+            Member of the Singapore Ministry of Health’s Orthopaedic Workgroup
+            in 2014.
+          </div>
+
+          <div class="achievement-card">
+            Appointed by MOH to serve on the Healthcare Workforce of the
+            Future
+            Corporate Planning Team, contributing to the OT/PT Advanced Scope
+            Project.
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        const profiles = {
+          "john-abraham": {
+            name: "John Abraham",
+            title: "CEO, Founder, Senior Principal Physiotherapist",
+            bio: `
+            <p>John in 2000 graduated with a Bachelors in physiotherapy from Ramachandra Medical College. Early in his career, John started providing physiotherapy coverage at Local Community Hospitals, Private Clinics and Voluntary Welfare organisations. After 18 years and counting, he has been actively working for various healthcare organizations and has hundreds of grateful patients to his credit to date.</p>
+            
+            <p>John and his team’s passion lies in providing the best physiotherapy care to every patient, every time. 
+              He continually works towards refining his skills with new methods and research to provide patients with 
+              the best treatment at a minimal cost.</p>
+              <p>Prior to joining Rapid Physiocare, John worked as the Head of Rehab services at a private hospital and was instrumental in setting up and establishing the rehabilitation department. John has worked alongside many reputed orthopaedist and surgeons in the city for the rehabilitation of joint injuries. He takes pride in being one of the pioneers to start primary care physiotherapy at polyclinics in Singapore. John's great sense of humour to lighten and strengthen patients while they are feeling weak and worried is also what sets him apart from other physiotherapists.
+                Through his years as a physiotherapist. John has experience working with both local and international patients with aches, pains, and other musculoskeletal conditions. If we were to pin him down, his absolute strength lies in managing Clinical Orthopaedic Rehabilitation and Pain Management. Also, he holds a keen interest in treating acute and chronic</p>
+                
+                `,
+                profileBottom: `
+                <p>Through his years as a physiotherapist, John has experience working with both local and international patients with aches, pains, and other musculoskeletal conditions. If we were to pin him down, his true strength lies in managing Clinical Orthopaedic Rehabilation and Pain Management. Also, he holds a keen interest in treating acute and chronic spine, musculoskeletal and sports injuries.</p>
+                
+                
+                
+          <p>In addition to his clinical work, John is actively involved in philanthropic and public health efforts. He conducts corporate talks at multinational companies, financial institutions, government agencies, factories, hotels and various industrial companies on everyday body aches and pains.</p>
+        `,
+        img: "../assets/OurTeam/elementor-placeholder-image.png"
+      },
+      "jane-smith": {
+        name: "Jane Smith",
+        title: "CEO, Founder, Senior Principal Physiotherapist",
+        bio: `
+        <p>John in 2000 graduated with a Bachelors in physiotherapy from Ramachandra Medical College. Early in his career, John started providing physiotherapy coverage at Local Community Hospitals, Private Clinics and Voluntary Welfare organisations. After 18 years and counting, he has been actively working for various healthcare organizations and has hundreds of grateful patients to his credit to date.</p>
+        
+        <p>John and his team’s passion lies in providing the best physiotherapy care to every patient, every time. 
+          He continually works towards refining his skills with new methods and research to provide patients with 
+          the best treatment at a minimal cost.</p>
+          <p>Prior to joining Rapid Physiocare, John worked as the Head of Rehab services at a private hospital and was instrumental in setting up and establishing the rehabilitation department. John has worked alongside many reputed orthopaedist and surgeons in the city for the rehabilitation of joint injuries. He takes pride in being one of the pioneers to start primary care physiotherapy at polyclinics in Singapore. John's great sense of humour to lighten and strengthen patients while they are feeling weak and worried is also what sets him apart from other physiotherapists.
+            Through his years as a physiotherapist. John has experience working with both local and international patients with aches, pains, and other musculoskeletal conditions. If we were to pin him down, his absolute strength lies in managing Clinical Orthopaedic Rehabilitation and Pain Management. Also, he holds a keen interest in treating acute and chronic</p>
+            
+            `,
+          profileBottom: `
+          <p>Through his years as a physiotherapist, John has experience working with both local and international patients with aches, pains, and other musculoskeletal conditions. If we were to pin him down, his true strength lies in managing Clinical Orthopaedic Rehabilation and Pain Management. Also, he holds a keen interest in treating acute and chronic spine, musculoskeletal and sports injuries.</p>
+          
+          
+          
+          <p>In addition to his clinical work, John is actively involved in philanthropic and public health efforts. He conducts corporate talks at multinational companies, financial institutions, government agencies, factories, hotels and various industrial companies on everyday body aches and pains.</p>
+          `,
+          img: "../assets/OurTeam/elementor-placeholder-image.png"
+        },
+        "emily-carter": {
+          name: "Emily Carter",
+          title: "CEO, Founder, Senior Principal Physiotherapist",
+          bio: `
+          <p>John in 2000 graduated with a Bachelors in physiotherapy from Ramachandra Medical College. Early in his career, John started providing physiotherapy coverage at Local Community Hospitals, Private Clinics and Voluntary Welfare organisations. After 18 years and counting, he has been actively working for various healthcare organizations and has hundreds of grateful patients to his credit to date.</p>
+          
+          <p>John and his team’s passion lies in providing the best physiotherapy care to every patient, every time. 
+            He continually works towards refining his skills with new methods and research to provide patients with 
+            the best treatment at a minimal cost.</p>
+            <p>Prior to joining Rapid Physiocare, John worked as the Head of Rehab services at a private hospital and was instrumental in setting up and establishing the rehabilitation department. John has worked alongside many reputed orthopaedist and surgeons in the city for the rehabilitation of joint injuries. He takes pride in being one of the pioneers to start primary care physiotherapy at polyclinics in Singapore. John's great sense of humour to lighten and strengthen patients while they are feeling weak and worried is also what sets him apart from other physiotherapists.
+Through his years as a physiotherapist. John has experience working with both local and international patients with aches, pains, and other musculoskeletal conditions. If we were to pin him down, his absolute strength lies in managing Clinical Orthopaedic Rehabilitation and Pain Management. Also, he holds a keen interest in treating acute and chronic</p>
+
+`,
+          profileBottom: `
+          <p>Through his years as a physiotherapist, John has experience working with both local and international patients with aches, pains, and other musculoskeletal conditions. If we were to pin him down, his true strength lies in managing Clinical Orthopaedic Rehabilation and Pain Management. Also, he holds a keen interest in treating acute and chronic spine, musculoskeletal and sports injuries.</p>
+
+          
+          
+          <p>In addition to his clinical work, John is actively involved in philanthropic and public health efforts. He conducts corporate talks at multinational companies, financial institutions, government agencies, factories, hotels and various industrial companies on everyday body aches and pains.</p>
+        `,
+        img: "../assets/OurTeam/elementor-placeholder-image.png"
+      }
+      
+    };
+
+    // ✅ Load John Abraham’s profile by default
+    function loadProfile(memberKey) {
+      const profile = profiles[memberKey];
+        if (!profile) return;
+        
+        document.getElementById("profile-name").textContent = profile.name;
+        document.getElementById("profile-title").textContent = profile.title;
+        document.getElementById("profile-bio").innerHTML = profile.bio;
+        document.getElementById("profile-bottom").innerHTML = profile.profileBottom;
+        document.getElementById("profile-img").src = profile.img;
+      }
+      
+      // ✅ Load default (URL param or first profile)
+      const params = new URLSearchParams(window.location.search);
+      const memberKey = params.get("member") || "john-abraham";
+      loadProfile(memberKey);
+      
+      // ✅ Click handler for all team members
+      document.querySelectorAll(".team-member").forEach(member => {
+        member.addEventListener("click", () => {
+          const key = member.getAttribute("data-member");
+          loadProfile(key);
+        });
+      });
+      // ✅ Thumbnails click event
+      document.querySelectorAll(".thumb").forEach(thumb => {
+        thumb.addEventListener("click", () => {
+          const member = thumb.getAttribute("data-member");
+          loadProfile(member);
+          history.replaceState(null, "", `?member=${member}`);
+        });
+      });
+
+      // Top to buttom button
+            let mybutton = document.getElementById("scrollTopBtn");
+
+            window.onscroll = function () {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            };
+
+            mybutton.onclick = function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+      </script>
+
+<!-- footer -->
+<div class="footer-wrapper lato-font footer-section-gradient">
+      <section class="hero-section">
+        <h1 class="headline">Begin Your Personalised Journey To Precision Wellness</h1>
+        <button class="reserve-button">RESERVE YOUR DISCOVERY SESSION</button>
+      </section>
+      <section style="margin-bottom: 0; width: 95%; margin-left: auto; margin-right: auto;">
+        <div class="page-heading lato-font"
+        style="background: url('../assets/maps/Maps.png') no-repeat center; background-size: cover; position: relative; height: 400px; border-radius: 20px; overflow: hidden;min-width: 100%;">
+        <div
+        style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.0); z-index: 1;">
+      </div>
+      <div
+      style="position: absolute; bottom: 0px; left: 0px; z-index: 2; background-color: #3a2b22; padding: 20px 40px; max-width: 300px; border-top-right-radius: 20px;">
+      <p style="color: #d7b547; margin: 0; font-weight: 400px;text-align:left;">LOCATION</p>
+      <p style="color: white; margin: 5px 0 0 0; text-align: left; font-weight: 600;">
+        Level 5, 22 Martin Road, Singapore
+      </p>
+    </div>
+    <img src="../assets/maps/Icon place.png" alt="Location"
+    style="position: absolute; top: 50%; left:52.5%; height: 20%; transform: translate(-50%, -50%); z-index: 3;">
+  </div>
+</section>
+      <footer style="padding: 40px 10px 70px 10px; color: #5c3d2e; max-width: 95%;margin: auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+          <img src="../assets/logos/logo.png" alt="Logo" style="width: 200px;" />
+          <div style="display: flex; gap: 10px; align-items: end;flex-wrap: wrap;">
+            <div style="flex-grow: 1;">
+              <div class="p-large" style="font-weight: 400; margin-bottom: 5px; color: #987A5C">CONTACT</div>
+              <div class="p-large"><strong style="color: #000000;">WhatsApp
+                  Concierge:</strong> <b>
+                  <a href="https://wa.me/6563482764" target="_blank" style="text-decoration: none; color: #987A5C;"> +65
+                    63482764</a></b>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="mailto:hello@icdesign.sg"
+                  style="color: #987A5C; text-decoration: none; font-weight: 600;">hello@rapide.sg &nbsp;&nbsp;</a>
+              </div>
+            </div>
+            <a href="https://www.facebook.com/rapide.sg" style="background-color: #47301F; border-radius: 25px; padding: 8px 6px"><i
+                class="fa-brands fa-facebook-f" style="font-size: 28px; color: #ffffff;"></i></a>
+            <a href="https://www.instagram.com/rapide.sg" style="background-color: #47301F; border-radius: 25px; padding: 10px 8px"><i
+                class="fa-brands fa-instagram" style="font-size: 28px; color: #ffffff;"></i></a>
+            <a href="http://linkedin.com/company/rapide-singapore" style="background-color: #47301F; border-radius: 25px; padding: 10px 8px"><i
+                class="fa-brands fa-linkedin-in" style="font-size: 28px; color: #ffffff;"></i></a>
+          </div>
+        </div>
+        <div class="p-medium footer-last-line" style="margin-top: 40px; text-align: right; color: #000000;">
+          2025 Rapid Wellness and Lifestyle Pte Ltd
+          &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://app.box.com/s/8trwr756mrskw47oldc42f0a7l7gx665"
+            style="color: #000000; text-decoration: none;">Privacy
+            Policy</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://app.box.com/s/wdjl5374dkhd25drokjczr4fzzpcn26i"
+            style="color: #000000; text-decoration: none;">Terms and Conditions</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://app.box.com/s/4ryiqi7yil2bfa4zxlcp0whb7k8weiqj"
+            style="color: #000000; text-decoration: none;">PDPA</a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      
+      // ✅ Toggle Menu
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const sideMenu = document.getElementById("sideMenu");
+      
+      toggleBtn.addEventListener("click", () => {
+        sideMenu.classList.toggle("active");
+      });
+      window.addEventListener("scroll", () => {
+        if (sideMenu.classList.contains("active")) {
+          sideMenu.classList.remove("active");
+        }
+      });
+      
+      </script>
+      </main>
+</body>
+
+</html>

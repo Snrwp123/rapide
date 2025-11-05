@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-image: url(../assets/background/Ellipse\ 3.png);
+
+}
+body {
+    font-family: "Marcellus", sans-serif;
+    font-family: "Lato", sans-serif;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    max-width: 95%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Title and Subtitle Styling */
+.contact-title {
+    font-size: 60px;
+    font-family: "Marcellus", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #47301F;
+}
+
+.contact-subtitle {
+    font-size: 28px;
+    font-family: "Lato", sans-serif;
+    margin-top: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.contact-bold {
+    font-weight: bold;
+}
+
+/* Image Styling */
+.contact-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* Contact Form Section Heading */
+.rapide-contact-section {
+    padding: 60px 20px;
+}
+
+.rapide-contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rapide-contact-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.rapide-contact-subtext {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.rapide-contact-subtext a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.floating-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+.form-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.form-group input:focus~label,
+.form-group input:not(:placeholder-shown)~label,
+.form-group select:focus~label,
+.form-group select:valid~label,
+.form-group textarea:focus~label,
+.form-group textarea:not(:placeholder-shown)~label {
+    top: -12px;
+    font-size: 13px;
+    color: #000;
+}
+
+/* Contact form */
+.floating-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "lato", sans-serif;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  background: transparent;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  resize: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-group label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #000000;
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+/* Animate label on focus or input */
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label,
+.form-group select:focus ~ label,
+.form-group select:valid ~ label {
+  top: -12px;
+  font-size: 13px;
+  color: #000;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: transparent;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-bottom: 1px solid #000;
+}
+
+.select-group {
+  position: relative;
+}
+
+.select-group select {
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+/* Custom dropdown arrow */
+.select-arrow {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #222;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.select-group select:focus ~ label + .select-arrow {
+  transform: rotate(180deg);
+}
+
+.submit-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.submit-btn:hover {
+  background: #000;
+}
+
+.form-group select option {
+  padding: 10px 15px;
+}
+
+/* Responsive Design form */
+@media (max-width: 600px) {
+  .floating-form {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+}
+
+/* Responsive design of main contact section */
+@media screen and (max-width: 768px) {
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-subtitle {
+        font-size: 16px;
+    }
+
+    .contact-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-title {
+        font-size: 32px;
+    }
+
+    .contact-subtitle {
+        font-size: 20px;
+    }
+}
