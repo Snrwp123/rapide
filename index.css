@@ -137,6 +137,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  background-color: #4b3f34c4;
 }
 
 /* Text Styling */
@@ -538,7 +539,7 @@ pre.w-code-block code {
 
 .w-optimization {
   display: contents;
-  
+
 }
 
 .w-webflow-badge,
@@ -5311,8 +5312,9 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._01:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card._02 {
@@ -5325,13 +5327,14 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._02:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card._03 {
   transform-origin: 100%;
-  background-image: url(assets/Experience/Exp\ 3.png);
+  background-image: url(assets/Experience/Cryotherapy.jpg);
   background-position: center;
   background-size: cover;
   flex: none;
@@ -5340,8 +5343,9 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._03:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card._04 {
@@ -5353,8 +5357,9 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._04:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card._05 {
@@ -5366,12 +5371,13 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._05:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card._06 {
-  background-image: url(assets/Experience/Exp\ 6.png);
+  background-image: url(assets/Experience/Red\ Light\ Therapy\ 2.png);
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
@@ -5379,8 +5385,9 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._06:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card._07 {
@@ -5392,8 +5399,9 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._07:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card._08 {
@@ -5405,12 +5413,13 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._08:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card._09 {
-  background-image: url(assets/Experience/Exp\ 4.png);
+  background-image: url(assets/Experience/InBody\ Report.png);
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
@@ -5418,8 +5427,9 @@ figcaption {
   transform-origin: center center;
   transition: transform 0.6s ease;
 }
+
 .h-card._09:hover {
- transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .h-card-content {
@@ -5663,7 +5673,7 @@ figcaption {
 .card-heading {
   flex-flow: column;
   flex-wrap: wrap;
-  gap: 50px;
+  justify-content: space-between;
   align-items: flex-start;
   display: flex;
   height: 100%;
@@ -7643,7 +7653,7 @@ figcaption {
 
 .expand-sticky-card {
   background-color: red;
-  background-image: url(assets/Static-montage/RAW/indian-yogi-doing-advanced-hand-stand-yoga-pose-gym.png);
+  background-image: url(assets/card/[Expanding\ Image]\ Final\ Card.png);
   background-position: 50% 60%;
   background-size: 100vw;
   border-radius: 24px;
@@ -7653,7 +7663,7 @@ figcaption {
   overflow: hidden;
 }
 
-.sticky-head{
+.sticky-head {
   position: sticky;
   top: 70px;
 }
@@ -9143,6 +9153,16 @@ figcaption {
   letter-spacing: 1px;
 }
 
+.btn-brown-membership {
+  display: inline-block;
+  background-color: #D7B547;
+  color: #282424;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 10px 20px;
+}
+
 .readmore-btn {
   display: inline-block;
   background-color: transparent;
@@ -9278,7 +9298,7 @@ figcaption {
   .box-mobile {
     flex-wrap: wrap;
   }
-  
+
   .membership-section {
     width: 100% !important;
     margin-left: 25px;
@@ -9309,9 +9329,9 @@ figcaption {
   }
 
   .div-block-25 {
-  margin-bottom: 16px;
-  max-width: 95%;
-}
+    margin-bottom: 16px;
+    max-width: 95%;
+  }
 
 }
 
@@ -12121,6 +12141,7 @@ header {
   #w-node-_37cf6e5b-0515-8a49-026e-59b0c8c03772-87c04fc6 {
     grid-column: span 2 / span 2;
   }
+
   .crop-tailor-responsive {
     margin: 0px;
     align-items: center;
@@ -12198,6 +12219,7 @@ header {
     width: 90% !important;
     margin: auto !important;
   }
+
   .pillors-card-height-responsive {
     height: 300px;
   }
@@ -12205,6 +12227,7 @@ header {
 
 
 @media screen and (max-width: 768px) {
+
   .team-mobile-responsive,
   .inner-heading-team {
     text-align: center !important;
@@ -12298,6 +12321,104 @@ header img {
 .membership-section .flex-dir .left-section {
   margin-left: 50px;
 }
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 280px 350px;
+    grid-template-rows: 220px 220px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+/* Common image styling */
+.image-grid img {
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Top-left image */
+.img1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: 2;
+    margin-top: -50px;
+    margin-right: -150px; /* overlaps right image */
+    width: 200px;
+}
+
+/* Right-side tall image */
+.img2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    z-index: 1;
+    width: 450px;
+}
+
+/* Bottom-left image */
+.img3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    z-index: 2;
+    margin-top: 90px;
+    margin-right: -260px; /* overlaps right image */
+    width: 250px;
+}
+
+/* Hover effect - only hovered image animates */
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  border-radius: 35px;
+}
+
+/* Optional responsive layout */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
+  .img2 {
+    height: auto;
+  }
+}
+
+/* Corporates section */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* images ke darmiyan space */
+  margin: 40px auto;
+}
+
+.image-container img {
+  width: 450px; /* apni zarurat ke mutabiq adjust karein */
+  height: 350px;
+  border-radius: 35px; /* rounded corners */
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* halka shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+  }
+  .image-container img {
+    width: 90%;
+  }
+}
+
+
 
 @media (max-width : 1024px) {
 
@@ -12398,7 +12519,9 @@ header img {
 }
 
 @media screen and (max-width: 480px) {
-  .h-l.pillars-card-mobile-heading, .pillors-responsive .h-l.lato-font{
+
+  .h-l.pillars-card-mobile-heading,
+  .pillors-responsive .h-l.lato-font {
     font-family: "lato", sans-serif;
     font-weight: 400;
     font-size: 20px !important;
@@ -12407,12 +12530,12 @@ header img {
   .footer-last-line {
     text-align: left !important;
   }
-  
+
   .corporates-mobile-width {
-    width: 95%!important;
+    width: 95% !important;
   }
 
-  .heading-tags{
+  .heading-tags {
     font-size: 30px !important;
   }
 
