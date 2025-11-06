@@ -57,6 +57,7 @@ function initCarousel() {
   track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
   setTimeout(() => { track.style.transition = 'transform 0.5s ease-in-out'; }, 20);
   startAutoplay();
+  updateArrows(); // <-- call here
 }
 
 function moveSlide(direction = 1) {
@@ -83,6 +84,7 @@ function moveSlide(direction = 1) {
       track.style.transition = 'transform 0.5s ease-in-out';
     }
     isAnimating = false;
+    updateArrows(); // <-- and call here
   };
 
   track.addEventListener('transitionend', onEnd);
@@ -121,125 +123,28 @@ window.addEventListener('load', () => {
   initCarousel();
 });
 
+// returns true when the carousel is showing the very first original slide (original index 0)
+function isOnFirstOriginal() {
+  // normalize currentIndex to an index in [0 .. originalCount-1]
+  const logical = ((currentIndex - slidesPerPage) % originalCount + originalCount) % originalCount;
+  return logical === 0;
+}
+
+function updateArrows() {
+  if (isOnFirstOriginal()) {
+    prevBtn.style.pointerEvents = 'none';
+    prevBtn.style.opacity = '0.5';
+    prevBtn.setAttribute('aria-disabled', 'true');
+  } else {
+    prevBtn.style.pointerEvents = 'auto';
+    prevBtn.style.opacity = '1';
+    prevBtn.setAttribute('aria-disabled', 'false');
+  }
+}
+
 let startX = 0;
 let currentX = 0;
 let isDragging = false;
-
-function onDragStart(e) {
-  stopAutoplay();
-  isDragging = true;
-  startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-  currentX = startX;
-  track.style.transition = 'none'; // disable animation while dragging
-}
-
-function onDragMove(e) {
-  if (!isDragging) return;
-  currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-  const delta = currentX - startX;
-
-  // Clamp: max ek slide ki width tak kheench sakte ho
-  const limitedDelta = Math.max(Math.min(delta, slideWidth), -slideWidth);
-
-  track.style.transform = `translateX(-${currentIndex * slideWidth - limitedDelta}px)`;
-}
-
-function onDragEnd() {
-  if (!isDragging) return;
-  isDragging = false;
-
-  const delta = currentX - startX;
-  const threshold = slideWidth * 0.25; // 25% drag threshold
-
-  // Enable smooth transition for snap
-  track.style.transition = 'transform 0.4s ease';
-
-  if (Math.abs(delta) > threshold) {
-    // Swipe left/right → always move exactly one slide
-    if (delta > 0) {
-      moveSlide(-1);
-    } else {
-      moveSlide(1);
-    }
-  } else {
-    // Not enough swipe → snap back to currentIndex
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-  }
-
-  resetAutoplay();
-}
-
-
-function onDragMove(e) {
-  if (!isDragging) return;
-  currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-  const delta = currentX - startX;
-
-  // Clamp delta so user never drags more than one slide visually
-  const limitedDelta = Math.max(Math.min(delta, slideWidth), -slideWidth);
-
-  track.style.transform = `translateX(-${currentIndex * slideWidth - limitedDelta}px)`;
-}
-
-function onDragEnd() {
-  if (!isDragging) return;
-  isDragging = false;
-
-  const delta = currentX - startX;
-  const threshold = slideWidth * 0.25; // 25% drag threshold
-
-  // Enable smooth transition again
-  track.style.transition = 'transform 0.4s ease';
-
-  if (Math.abs(delta) > threshold) {
-    if (delta > 0) {
-      moveSlide(-1); // slide to previous
-    } else {
-      moveSlide(1); // slide to next
-    }
-  } else {
-    // Snap back to current slide smoothly
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-  }
-
-  resetAutoplay();
-}
-
-function onDragEnd() {
-  if (!isDragging) return;
-  isDragging = false;
-
-  const delta = currentX - startX;
-  const threshold = slideWidth * 0.25; // 25% drag threshold
-
-  // Enable smooth transition for snap
-  track.style.transition = 'transform 0.4s ease';
-
-  if (Math.abs(delta) > threshold) {
-    if (delta > 0) {
-      moveSlide(-1); // slide to previous
-    } else {
-      moveSlide(1); // slide to next
-    }
-  } else {
-    // Snap back to current slide smoothly
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-  }
-
-  resetAutoplay();
-}
-
-// mouse events
-track.addEventListener('mousedown', onDragStart);
-window.addEventListener('mousemove', onDragMove);
-window.addEventListener('mouseup', onDragEnd);
-
-// touch events
-track.addEventListener('touchstart', onDragStart);
-track.addEventListener('touchmove', onDragMove);
-track.addEventListener('touchend', onDragEnd);
-
-
 
 // Hero section heading visibility based on image 
 function checkHeroSize() {
@@ -252,16 +157,12 @@ function checkHeroSize() {
   const currVW = (rect.width / window.innerWidth) * 100;
   const currVH = (rect.height / window.innerHeight) * 100;
 
-  console.log("Current:", currVW.toFixed(2) + "vw", currVH.toFixed(2) + "vh");
-
   const targetVW = 71.1728;
   const targetVH = 79.9428;
 
   if (currVW < targetVW || currVH < targetVH) {
-    console.log("-> HIDE");
     heading.style.opacity = "0";
   } else {
-    console.log("-> SHOW");
     heading.style.opacity = "1";
   }
 }
