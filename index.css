@@ -5405,7 +5405,7 @@ figcaption {
 }
 
 .h-card._08 {
-  background-image: url(assets/Experience/Private\ Recovery\ Suite.png);
+  background-image: url(assets/Experience/Private\ Recovery\ Suite.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
@@ -12364,6 +12364,7 @@ header img {
     margin-top: -50px;
     margin-right: -150px; /* overlaps right image */
     width: 200px;
+    height: 200px;
 }
 
 /* Right-side tall image */
@@ -12389,7 +12390,7 @@ header img {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   z-index: 2;
-  border-radius: 35px;
+  border-radius: 20px;
 }
 
 /* Optional responsive layout */
@@ -12501,8 +12502,17 @@ header img {
   margin: 40px auto;
 }
 
-.image-container img {
-  width: 450px; /* apni zarurat ke mutabiq adjust karein */
+.Corporate-Image1 {
+  width: 350px; /* apni zarurat ke mutabiq adjust karein */
+  height: 350px;
+  border-radius: 35px; /* rounded corners */
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* halka shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Corporate-Image2 {
+  width: 250px; /* apni zarurat ke mutabiq adjust karein */
   height: 350px;
   border-radius: 35px; /* rounded corners */
   object-fit: cover;
