@@ -167,7 +167,6 @@
     .corporate-cards-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 10px;
     }
 
@@ -184,7 +183,7 @@
       justify-content: flex-start;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       min-width: 250px;
-      max-width: 600px;
+      max-width: 900px;
       min-height: clamp(180px, 35vw, 400px);
     }
 
