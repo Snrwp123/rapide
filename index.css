@@ -9,7 +9,7 @@ body {
 }
 
 .slider-margin-buttom {
-  margin-bottom: -20px;
+  margin-bottom: -40px;
 }
 
 /* menberships section */
@@ -61,6 +61,7 @@ body {
   margin-top: 2%;
   gap: 10px;
   flex-wrap: wrap;
+  height: 700px !important;
 }
 
 .card {
@@ -72,6 +73,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  height: 100%;
 }
 
 .card:hover {

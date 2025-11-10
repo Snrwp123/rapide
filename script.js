@@ -18,6 +18,15 @@ function getSlidesPerPage() {
   return 2;
 }
 
+// Number of slides to move per click
+let slidesPerMove = 2;
+
+// Calculate total dot pages
+function getTotalPages() {
+  return Math.ceil(originalCount / slidesPerMove);
+}
+
+
 function createClones() {
   Array.from(track.querySelectorAll('.slide.clone')).forEach(c => c.remove());
   const originals = Array.from(track.querySelectorAll('.slide:not(.clone)'));
@@ -63,7 +72,9 @@ function initCarousel() {
 function moveSlide(direction = 1) {
   if (isAnimating) return;
   isAnimating = true;
-  currentIndex += direction;
+
+  currentIndex += direction * slidesPerMove; // move by 2 (or slidesPerMove)
+
   track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 
   const onEnd = () => {
@@ -71,13 +82,13 @@ function moveSlide(direction = 1) {
     const totalWithClones = originalCount + slidesPerPage * 2;
 
     if (currentIndex < slidesPerPage) {
-      currentIndex = currentIndex + originalCount;
+      currentIndex += originalCount;
       track.style.transition = 'none';
       track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
       void track.offsetWidth;
       track.style.transition = 'transform 0.5s ease-in-out';
     } else if (currentIndex >= originalCount + slidesPerPage) {
-      currentIndex = currentIndex - originalCount;
+      currentIndex -= originalCount;
       track.style.transition = 'none';
       track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
       void track.offsetWidth;
@@ -91,6 +102,7 @@ function moveSlide(direction = 1) {
   track.addEventListener('transitionend', onEnd);
 }
 
+
 function goToSlide(index) {
   if (isAnimating) return;
   isAnimating = true;
@@ -103,7 +115,8 @@ function goToSlide(index) {
 
 function createDots() {
   dotsContainer.innerHTML = '';
-  for (let i = 0; i < originalCount; i++) {
+  const totalPages = getTotalPages();
+  for (let i = 0; i < totalPages; i++) {
     const dot = document.createElement('span');
     dot.classList.add('dot');
     dot.style.cssText = `
@@ -116,26 +129,28 @@ function createDots() {
       transition: background-color 0.3s ease;
     `;
     dot.addEventListener('click', () => {
-      goToSlide(i);
+      goToSlide(i * slidesPerMove); // jump by group
       resetAutoplay();
     });
     dotsContainer.appendChild(dot);
   }
 }
 
+
 function updateDots() {
   const dots = Array.from(dotsContainer.children);
-  const logicalIndex = ((currentIndex - slidesPerPage) % originalCount + originalCount) % originalCount;
+  const logicalIndex = Math.floor(((currentIndex - slidesPerPage) % originalCount + originalCount) / slidesPerMove);
   dots.forEach((d, i) => {
     d.style.backgroundColor = i === logicalIndex ? '#987a5c' : '#47301f';
   });
 }
 
+
 function startAutoplay() {
   stopAutoplay();
   autoplayInterval = setInterval(() => {
     moveSlide(1);
-  }, 4000);
+  }, 3000);
 }
 
 function stopAutoplay() {
