@@ -12533,7 +12533,7 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 40px 0;
+  padding: 40px 0px 0px 0px;
   margin: auto;
 }
 
