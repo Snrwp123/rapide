@@ -137,7 +137,6 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: #4b3f34c4;
 }
 
 /* Text Styling */
@@ -5318,7 +5317,7 @@ figcaption {
 }
 
 .h-card._02 {
-  background-image: url(assets/Experience/Finnish\ Sauna.png);
+  background-image: url(assets/Experience/Gemini_Generated_Image_2fr7qd2fr7qd2fr7.png);
   background-position: center;
   background-size: cover;
   flex: none;
@@ -7535,7 +7534,7 @@ figcaption {
 }
 
 .resize-card {
-  background-image: url(assets/Our-Promise/Our\ Promise.jpg);
+  background-image: url(assets/Our-Promise/or-promise.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -7570,7 +7569,7 @@ figcaption {
 }
 
 .card-expand-l {
-  background-image: url(assets/Hero\ 2.png);
+  background-image: url(assets/Hero/Hero\ 2.png);
   background-position: 50% 100%;
   background-size: 100vw;
   width: 100%;
@@ -7632,6 +7631,7 @@ figcaption {
 .content-description {
   width: 80%;
 }
+
 .content-description1 {
   width: 95%;
 }
@@ -7731,6 +7731,30 @@ figcaption {
   top: 210px;
   overflow: hidden;
 }
+
+.overlay-coming span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-family: "lato" , sans-serif;
+  z-index: 2222;
+  color: #fff;
+}
+
+
+.overlay-coming::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000d7;
+  z-index: 222;
+}
+
 
 .content-description-hero {
   grid-column-gap: 24px;
@@ -9225,6 +9249,7 @@ figcaption {
   .arrow.left {
     left: 37%;
   }
+
   .arrow.right {
     right: 37%;
   }
@@ -12318,15 +12343,6 @@ header {
   background-size: 150%;
 }
 
-
-.slider-dots .dot {
-  background-color: #987A5C !important;
-}
-.slider-dots .dot:active{
-  background-color: #47301F !important;
-  transform: scale(1.2);
-}
-
 .footer-section-gradient {
   background-image: url(/assets/background/Ellipse\ 3.png);
   background-position: bottom right;
@@ -12350,55 +12366,56 @@ header img {
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: 280px 350px;
-    grid-template-rows: 220px 220px;
-    align-items: center;
-    justify-items: center;
-    position: relative;
+  display: grid;
+  grid-template-columns: 280px 350px;
+  grid-template-rows: 220px 220px;
+  align-items: center;
+  justify-items: center;
+  position: relative;
 }
 
 /* Common image styling */
 .image-grid img {
-    object-fit: cover;
-    border-radius: 20px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 /* Top-left image */
 .img1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    z-index: 2;
-    margin-top: -50px;
-    margin-right: -150px; /* overlaps right image */
-    width: 200px;
-    height: 200px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 2;
+  margin-top: -50px;
+  margin-right: -150px;
+  /* overlaps right image */
+  width: 200px;
+  height: 200px;
 }
 
 /* Right-side tall image */
 .img2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    z-index: 1;
-    width: 450px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  z-index: 1;
+  width: 450px;
 }
 
 /* Bottom-left image */
 .img3 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    z-index: 2;
-    margin-top: 90px;
-    margin-right: -260px; /* overlaps right image */
-    width: 250px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  z-index: 2;
+  margin-top: 90px;
+  margin-right: -260px;
+  /* overlaps right image */
+  width: 250px;
 }
 
 /* Hover effect - only hovered image animates */
 .image-grid img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  z-index: 2;
   border-radius: 20px;
 }
 
@@ -12417,19 +12434,19 @@ header img {
 
 /* meet our team */
 .image-team {
-    display: grid;
-    grid-template-columns: 280px 350px;
-    grid-template-rows: 220px 220px;
-    align-items: center;
-    justify-items: center;
-    position: relative;
+  display: grid;
+  grid-template-columns: 280px 350px;
+  grid-template-rows: 220px 220px;
+  align-items: center;
+  justify-items: center;
+  position: relative;
 }
 
 /* Common image styling */
 .image-team img {
-    object-fit: cover;
-    border-radius: 35px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  object-fit: cover;
+  border-radius: 35px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 /* Top-left image */
@@ -12438,7 +12455,8 @@ header img {
   grid-row: 1 / 2;
   z-index: 2;
   margin-top: -110px;
-  margin-right: -200px; /* overlaps right image */
+  margin-right: -200px;
+  /* overlaps right image */
   width: 300px;
   height: 170px;
 }
@@ -12457,7 +12475,8 @@ header img {
   grid-row: 2 / 3;
   z-index: 2;
   margin-top: 90px;
-  margin-right: -260px; /* overlaps right image */
+  margin-right: -260px;
+  /* overlaps right image */
   width: 200px;
 }
 
@@ -12474,7 +12493,7 @@ header img {
 .image-team img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  z-index: 2;
+  /* z-index: 2; */
   border-radius: 35px;
 }
 
@@ -12490,12 +12509,15 @@ header img {
     height: auto;
   }
 }
+
 @media (max-width: 480px) {
+
   .img-team1,
   .img-team3,
   .img-team4 {
     display: none;
   }
+
   .image-team {
     display: flex;
     justify-content: center;
@@ -12507,25 +12529,32 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* images ke darmiyan space */
+  gap: 10px;
+  /* images ke darmiyan space */
   margin: 40px auto;
 }
 
 .Corporate-Image1 {
-  width: 350px; /* apni zarurat ke mutabiq adjust karein */
+  width: 350px;
+  /* apni zarurat ke mutabiq adjust karein */
   height: 350px;
-  border-radius: 35px; /* rounded corners */
+  border-radius: 35px;
+  /* rounded corners */
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* halka shadow effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  /* halka shadow effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .Corporate-Image2 {
-  width: 250px; /* apni zarurat ke mutabiq adjust karein */
+  width: 250px;
+  /* apni zarurat ke mutabiq adjust karein */
   height: 350px;
-  border-radius: 35px; /* rounded corners */
+  border-radius: 35px;
+  /* rounded corners */
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* halka shadow effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  /* halka shadow effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -12533,10 +12562,12 @@ header img {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
+
 @media (max-width: 768px) {
   .image-container {
     flex-direction: column;
   }
+
   .image-container img {
     width: 90%;
   }
