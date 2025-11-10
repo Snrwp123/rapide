@@ -7572,6 +7572,7 @@ figcaption {
   background-image: url(assets/Hero/Hero\ 2.png);
   background-position: 50% 100%;
   background-size: 100vw;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   position: relative;
@@ -12536,25 +12537,19 @@ header img {
 
 .Corporate-Image1 {
   width: 350px;
-  /* apni zarurat ke mutabiq adjust karein */
-  height: 350px;
+  height: 450px;
   border-radius: 35px;
-  /* rounded corners */
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  /* halka shadow effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .Corporate-Image2 {
   width: 250px;
-  /* apni zarurat ke mutabiq adjust karein */
-  height: 350px;
+  height: 450px;
   border-radius: 35px;
-  /* rounded corners */
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  /* halka shadow effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
