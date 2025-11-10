@@ -162,6 +162,19 @@ function resetAutoplay() {
   startAutoplay();
 }
 
+// Wrap the current initCarousel call inside a function triggered by IntersectionObserver
+window.addEventListener('load', () => {
+  const sliderObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        initCarousel();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.1 });
+  sliderObserver.observe(container);
+});
+
 container.addEventListener('mouseenter', () => stopAutoplay());
 container.addEventListener('mouseleave', () => startAutoplay());
 
