@@ -9,7 +9,7 @@ body {
 }
 
 .slider-margin-buttom {
-  margin-bottom: -44px;
+  margin-bottom: -20px;
 }
 
 /* menberships section */
@@ -12316,6 +12316,15 @@ header {
   background-position: -50%;
   background-repeat: no-repeat;
   background-size: 150%;
+}
+
+
+.slider-dots .dot {
+  background-color: #987A5C !important;
+}
+.slider-dots .dot:active{
+  background-color: #47301F !important;
+  transform: scale(1.2);
 }
 
 .footer-section-gradient {
