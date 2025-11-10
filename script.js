@@ -139,7 +139,7 @@ function createDots() {
 
 function updateDots() {
   const dots = Array.from(dotsContainer.children);
-  const logicalIndex = Math.floor(((currentIndex - slidesPerPage) % originalCount + originalCount) / slidesPerMove);
+  const logicalIndex = Math.floor(((currentIndex - slidesPerPage) / slidesPerMove) % getTotalPages());
   dots.forEach((d, i) => {
     d.style.backgroundColor = i === logicalIndex ? '#987a5c' : '#47301f';
   });

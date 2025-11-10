@@ -9,7 +9,7 @@ body {
 }
 
 .slider-margin-buttom {
-  margin-bottom: -40px;
+  margin-bottom: -20px;
 }
 
 /* menberships section */
@@ -12533,8 +12533,8 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* images ke darmiyan space */
-  margin: 40px auto;
+  padding: 40px 0;
+  margin: auto;
 }
 
 .Corporate-Image1 {
