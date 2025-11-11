@@ -182,28 +182,45 @@
       gap: 10px;
     }
 
-    .corporate-card {
-      position: relative;
-      flex: 1 1 clamp(250px, 40%, 400px);
-      background-size: cover;
-      background-position: center;
-      border-radius: 18px;
-      overflow: hidden;
-      color: white;
-      display: flex;
-      align-items: end;
-      justify-content: flex-start;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      min-width: 250px;
-      max-width: 900px;
-      min-height: clamp(180px, 35vw, 400px);
-      height: 100%;
-    }
+        .corporate-card {
+          position: relative;
+          flex: 1 1 clamp(250px, 40%, 400px);
+          background-size: cover;
+          background-position: center;
+          border-radius: 18px;
+          overflow: hidden;
+          color: white;
+          display: flex;
+          align-items: end;
+          justify-content: flex-start;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          min-width: 250px;
+          max-width: 900px;
+          min-height: clamp(180px, 35vw, 400px);
+          height: 100%;
+        }
+    
+        /* Overlay effect */
+        .corporate-card::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.35);
+          /* adjust transparency here */
+          z-index: 0;
+        }
+    
+        /* Text layer above overlay */
+        .corporate-card * {
+          position: relative;
+          z-index: 1;
+        }
+    
+        .corporate-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
 
-    .corporate-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    }
 
     .card-content {
       padding: 40px 20px 0px 0px;
