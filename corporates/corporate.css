@@ -133,7 +133,7 @@
     }
 
     .corporate-feature-content h3 {
-      font-size: clamp(20px, 6vw, 30px);
+      font-size: 22px;
       margin: 0 0 5px 0;
       font-weight: bold;
     }
@@ -179,12 +179,13 @@
       overflow: hidden;
       color: white;
       display: flex;
-      align-items: flex-start;
+      align-items: end;
       justify-content: flex-start;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       min-width: 250px;
       max-width: 900px;
       min-height: clamp(180px, 35vw, 400px);
+      height: 100%;
     }
 
     .corporate-card:hover {
@@ -197,7 +198,7 @@
       text-align: left;
       border-radius: 10px;
       margin: 30px;
-      max-width: 55%;
+      max-width: 75%;
       display: flex;
       gap: 20px;
       align-items: flex-start;
