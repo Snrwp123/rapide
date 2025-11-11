@@ -110,7 +110,7 @@ body {
     width: 100%;
     padding: 10px 0;
     border: none;
-    border-bottom: 2px solid #aaa;
+    border-bottom: 2px solid #47301F;
     background: transparent;
     font-size: 16px;
     outline: none;
@@ -161,7 +161,7 @@ body {
   width: 100%;
   padding: 15px 0;
   border: none;
-  border-bottom: 2px solid #aaa;
+  border-bottom: 2px solid #47301F;
   background: transparent;
   font-size: 16px;
   color: #000;
@@ -169,6 +169,13 @@ body {
   resize: none;
   appearance: none;
   -webkit-appearance: none;
+}
+
+.faq-item {
+    padding: 30px 30px 30px  50px;
+    border-bottom: 2px solid #47301F;
+    max-width: 80%;
+    margin: auto;
 }
 
 .form-group label {

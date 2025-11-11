@@ -18,7 +18,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #C4AD96;
     }
 
     .about-container {
@@ -54,7 +53,6 @@
       align-items: center;
       text-align: center;
       gap: 5px;
-      background-color: #C4AD96;
     }
 
 
@@ -322,7 +320,7 @@
 
     .hero-section {
       border-top: 2px solid;
-      border-color: #bbbbbb;
+      border-color: #47301F;
       max-width: 95%;
     }
 
