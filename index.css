@@ -3647,7 +3647,7 @@ figcaption {
 }
 
 .section {
-  background-color: var(--white-main);
+  /* background-color: var(--white-main); */
   padding: auto;
 }
 
@@ -8087,7 +8087,7 @@ figcaption {
 .page-wrapper {
   z-index: 6;
   position: relative;
-  background-color: #fff;
+  background-color: #C4AD96;
 }
 
 .track-l-lp-02 {
@@ -12034,7 +12034,7 @@ header {
   align-items: center;
   padding: 15px 15px;
   /* position: sticky; */
-  background-color: #ffffff;
+  background-color: #C4AD96;
   top: 0;
   z-index: 10;
 }
@@ -12107,7 +12107,7 @@ header h1 {
 header {
   top: 0;
   z-index: 99;
-  background: #fff;
+  background: #C4AD96;
   box-shadow: none;
   transition: background 0.8s ease, box-shadow 0.8s ease;
 }

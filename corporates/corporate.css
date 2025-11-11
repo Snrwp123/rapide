@@ -6,6 +6,7 @@
     body {
       font-family: "Marcellus", sans-serif;
       font-family: "Lato", sans-serif;
+      background-color: #C4AD96;
     }
     main {
       background-image: url(../assets/background/Ellipse\ 3.png);
@@ -17,6 +18,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: #C4AD96;
     }
 
     .about-container {
@@ -52,6 +54,7 @@
       align-items: center;
       text-align: center;
       gap: 5px;
+      background-color: #C4AD96;
     }
 
 
@@ -78,7 +81,6 @@
       gap: 40px;
       padding: 0 6% 40px 6%;
       box-sizing: border-box;
-
     }
 
     .corporate-features-section h1 {
