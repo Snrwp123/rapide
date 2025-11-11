@@ -513,13 +513,16 @@ p {
   padding: 60px;
   margin: auto;
   width: 100%;
+  border-top: 2px solid;
+  border-color: #47301F;
+  max-width: 95%;
 }
 
 .headline {
   font-family: "Marcellus", serif;
   font-weight: 400;
   font-size: 2.5rem;
-  color: #47301F;
+  color: #000000;
   margin-bottom: 50px;
   max-width: 50%;
   margin: auto;

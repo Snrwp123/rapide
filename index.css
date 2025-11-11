@@ -7658,8 +7658,8 @@ figcaption {
 }
 
 .expand-sticky-card {
-  background-color: red;
   background-image: url(assets/card/[Expanding\ Image]\ Final\ Card.png);
+  background-repeat: no-repeat;
   background-position: 50% 60%;
   background-size: 100vw;
   border-radius: 24px;

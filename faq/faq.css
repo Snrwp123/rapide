@@ -75,7 +75,7 @@ body {
 
 .faq-item:last-child {
     padding: 30px 30px 30px 50px;
-    border-bottom: 2px solid #47301F;
+    border-bottom: none;
 }
 
 .faq-item h3 {
@@ -87,8 +87,12 @@ body {
 
 .faq-item p {
     font-size: 1.25rem;
-    color: #000000;
+    color: #292727;
     line-height: 1.3;
+}
+
+.faq-item li {
+    color: #292727;
 }
 
 

@@ -143,7 +143,7 @@
       margin: 0;
       line-height: 1.5;
       color: #3a3a3a;
-      max-width: 400px;
+      max-width: 450px;
     }
 
     /* corporate cards section  */
@@ -160,7 +160,7 @@
       font-family: "Marcellus", serif;
       font-weight: 400;
       margin-bottom: 30px;
-      color: #2b2b2b;
+      color: #47301F;
       letter-spacing: 1px;
     }
 
@@ -267,7 +267,7 @@
       font-size: clamp(14px, 2vw, 20px);
       letter-spacing: 1px;
       font-weight: 400;
-      color: #47301F;
+      color: #000000;
       max-width: 500px;
       text-transform: uppercase;
       line-height: 1.2;
@@ -278,7 +278,7 @@
     .enquire-content h2 {
       font-family: "Marcellus", serif;
       font-size: clamp(20px, 4vw, 36px);
-      color: #47301F;
+      color: #000000;
       line-height: 1.2;
       max-width: 450px;
       margin: 0 0 10px 0;
@@ -319,11 +319,11 @@
       transition: all 0.3s ease;
     }
 
-    .hero-section {
+    /* .hero-section {
       border-top: 2px solid;
       border-color: #47301F;
       max-width: 95%;
-    }
+    } */
 
 
 /* Mobile (max-width: 379px) */
