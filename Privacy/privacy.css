@@ -1,0 +1,125 @@
+/* Fonts already loaded in HTML: Marcellus (display), Lato (body) */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #362211;
+	color: #ffffff;
+}
+
+.privacy-page {
+	background-color: #362211;
+	color: #ffffff;
+}
+
+.privacy-hero {
+	padding: 80px 16px 20px 16px;
+}
+
+.privacy-hero__container {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+.brand-title {
+	font-family: "Marcellus", serif;
+	color: #e7c16a;
+	/* gold */
+	letter-spacing: 2px;
+	font-size: 30px;
+	text-align: center;
+	margin: 8px 0 18px 0;
+}
+
+.privacy-hero__title {
+	font-family: "Marcellus", serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 44px;
+	font-weight: 400;
+	margin: 0 0 8px 0;
+}
+
+.privacy-hero__date {
+	font-family: "Lato", sans-serif;
+	color: #e8dcc8;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-size: 12px;
+	opacity: 0.95;
+	margin: 0;
+}
+
+/* Content */
+.privacy-content {
+	padding: 8px 16px 80px 16px;
+}
+
+.privacy-content__container {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+.privacy-content__container p {
+	font-family: "Lato", sans-serif;
+	line-height: 1.9;
+	font-size: 16px;
+	margin: 14px 0;
+	color: #eee7dc;
+}
+
+.privacy-content__container h2 {
+	font-family: "Lato", sans-serif;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 30px 0 6px 0;
+}
+
+.privacy-content__container ul {
+	margin: 8px 0 16px 22px;
+	padding: 0;
+	list-style: disc;
+}
+
+.privacy-content__container li {
+	font-family: "Lato", sans-serif;
+	line-height: 1.9;
+	font-size: 16px;
+	margin: 8px 0;
+	color: #eee7dc;
+}
+
+.privacy-content__container li strong {
+	font-weight: 700;
+}
+
+.privacy-content__container ul li::marker {
+	color: #e8dcc8;
+	font-size: 14px;
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+	display: none;
+	background: #e7c16a;
+	color: #362211;
+	border: none;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	font-size: 18px;
+	cursor: pointer;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+#scrollTopBtn:hover {
+	background: #f0d486;
+}
