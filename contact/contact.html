@@ -64,7 +64,7 @@
                     You can also discover more about yourself through our short quiz, and our clinical 
                     team <br>will design a personalised journey to support and elevate your wellbeing.
                 </p>
-                <form class="floating-form" action="contact.php" method="POST">
+                <form class="floating-form" >
                     <div class="form-group">
                         <input type="text" placeholder=" " required>
                         <label>Your Name*</label>
@@ -91,10 +91,18 @@
                         <textarea placeholder=" " required rows="7"></textarea>
                         <label>Comment*</label>
                     </div>
-                    <button type="submit" class="submit-btn">SUBMIT</button>
+                    <button class="submit-btn">SUBMIT</button>
                 </form>
             </div>
         </section>
+        <style>
+            /* Apply Lato font only to user-entered text fields */
+            .floating-form input,
+            .floating-form select,
+            .floating-form textarea {
+                font-family: 'Lato', sans-serif !important;
+            }
+        </style>
 
         <!-- footer -->
         <div class="footer-wrapper lato-font footer-section-gradient">
