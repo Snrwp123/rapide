@@ -17,6 +17,10 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="/assets/logos/favicon.png" alt="Logo" class="loader-logo" />
+    </div>
     <!-- Top to buttom button -->
     <button id="scrollTopBtn">↑</button>
     <!-- navbar -->
@@ -64,7 +68,7 @@
                     You can also discover more about yourself through our short quiz, and our clinical 
                     team <br>will design a personalised journey to support and elevate your wellbeing.
                 </p>
-                <form class="floating-form" >
+                <form class="floating-form" action="contact.php" method="post">
                     <div class="form-group">
                         <input type="text" placeholder=" " required>
                         <label>Your Name*</label>
@@ -91,7 +95,7 @@
                         <textarea placeholder=" " required rows="7"></textarea>
                         <label>Comment*</label>
                     </div>
-                    <button class="submit-btn">SUBMIT</button>
+                    <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
             </div>
         </section>
@@ -195,6 +199,20 @@
             mybutton.onclick = function () {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             };
+
+            // JS for preloader
+                window.addEventListener("load", () => {
+                    const preloader = document.getElementById("preloader");
+                    const mainContent = document.getElementById("main-content");
+
+                    setTimeout(() => {
+                        preloader.style.opacity = "0";
+                        setTimeout(() => {
+                            preloader.style.display = "none";
+                            mainContent.style.display = "block";
+                        }, 500);
+                    }, 2000);
+                });
         </script>
     </main>
 </body>

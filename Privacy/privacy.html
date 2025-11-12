@@ -17,6 +17,10 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="/assets/logos/favicon.png" alt="Logo" class="loader-logo" />
+    </div>
     <!-- Top to buttom button -->
     <button id="scrollTopBtn">↑</button>
     <!-- navbar -->
@@ -64,7 +68,7 @@
                 <ul>
                     <li><strong>Basic identifiers:</strong> Name, NRIC/FIN (as legally required), email, phone, date of
                         birth, billing and address details.</li>
-                    <li><strong>Health & wellness data:</strong> Voluntary details to personalize recovery, therapy, or
+                    <li><strong>Health & wellness data:</strong> Voluntary details to personalise recovery, therapy, or
                         wellness programs.</li>
                     <li><strong>Membership & service data:</strong> Appointment and attendance records, preferences,
                         purchase history.</li>
@@ -79,7 +83,7 @@
                 <h2>2. Purpose of Collection, Use & Disclosure</h2>
                 <p>Personal data is collected, used, and disclosed for:</p>
                 <ul>
-                    <li>Delivering, managing, and personalizing services.</li>
+                    <li>Delivering, managing, and personalising services.</li>
                     <li>Processing bookings, payments, and memberships.</li>
                     <li>Communicating updates, promotions, or events (with opt-in consent).</li>
                     <li>Conducting research, analytics, and service improvement, including through secure, responsible
@@ -219,6 +223,20 @@
             mybutton.onclick = function () {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             };
+
+            // JS for preloader
+                window.addEventListener("load", () => {
+                    const preloader = document.getElementById("preloader");
+                    const mainContent = document.getElementById("main-content");
+
+                    setTimeout(() => {
+                        preloader.style.opacity = "0";
+                        setTimeout(() => {
+                            preloader.style.display = "none";
+                            mainContent.style.display = "block";
+                        }, 500);
+                    }, 2000);
+                });
         </script>
     </main>
 </body>

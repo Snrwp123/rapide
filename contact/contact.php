@@ -1,4 +1,6 @@
 <?php
+die ("here is ");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "ru198187@gmail.com";
     $subject = $_POST['subject'] ?: "New Contact Form Submission";
