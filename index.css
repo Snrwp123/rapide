@@ -7723,6 +7723,18 @@ figcaption {
   overflow: hidden;
 }
 
+.sticky-w6 {
+  flex-flow: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: sticky;
+  top: 210px;
+  overflow: hidden;
+}
+
 .sticky-w5 {
   flex-flow: column;
   justify-content: start;
@@ -7742,7 +7754,7 @@ figcaption {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 35px;
-  font-family: "lato" , sans-serif;
+  font-family: "lato", sans-serif;
   z-index: 2222;
   color: #fff;
 }
@@ -12392,7 +12404,6 @@ header img {
   z-index: 2;
   margin-top: -50px;
   margin-right: -150px;
-  /* overlaps right image */
   width: 200px;
   height: 200px;
 }
@@ -12412,8 +12423,8 @@ header img {
   z-index: 2;
   margin-top: 90px;
   margin-right: -260px;
-  /* overlaps right image */
   width: 250px;
+  border-radius: 35px!important;
 }
 
 /* Hover effect - only hovered image animates */
