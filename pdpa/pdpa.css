@@ -102,26 +102,3 @@ body {
 	color: #e8dcc8;
 	font-size: 14px;
 }
-
-/* Scroll-to-top button */
-/* #scrollTopBtn {
-	position: fixed;
-	bottom: 24px;
-	right: 24px;
-	display: none;
-	background: #e7c16a;
-	color: #362211;
-	border: none;
-	border-radius: 50%;
-	width: 44px;
-	height: 44px;
-	font-size: 18px;
-	cursor: pointer;
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
-
-#scrollTopBtn:hover {
-	background: #f0d486;
-} */
-
-

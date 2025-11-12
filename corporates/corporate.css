@@ -348,12 +348,6 @@
       transition: all 0.3s ease;
     }
 
-    /* .hero-section {
-      border-top: 2px solid;
-      border-color: #47301F;
-      max-width: 95%;
-    } */
-
 
     /* Mobile (max-width: 379px) */
     @media (max-width: 379px) {
