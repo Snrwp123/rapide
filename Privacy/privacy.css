@@ -104,10 +104,10 @@ body {
 }
 
 /* Scroll-to-top button */
-#scrollTopBtn {
+/* #scrollTopBtn {
 	position: fixed;
-	bottom: 24px;
-	right: 24px;
+	bottom: 20px;
+	right: 20px;
 	display: none;
 	background: #e7c16a;
 	color: #362211;
@@ -122,4 +122,4 @@ body {
 
 #scrollTopBtn:hover {
 	background: #f0d486;
-}
+} */
