@@ -8123,6 +8123,7 @@ figcaption {
   display: flex;
   position: absolute;
   inset: 0% auto auto 0%;
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .sticky-wrapper-lp {
@@ -11735,6 +11736,10 @@ figcaption {
   }
 
   .resize-card {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
     border-radius: 6px;
   }
 
@@ -12650,6 +12655,18 @@ header img {
   .heading-tags {
     font-size: 2.5em;
   }
+
+  .about-sec-discription {
+    display: flex;
+    justify-content: center!important;
+    text-align: center!important;
+    margin-bottom: 10px;
+  }
+
+  .expand-sticky-card {
+  background-repeat: no-repeat;
+  background-position: center;
+}
 }
 
 @media (max-width: 375px) {
@@ -12658,7 +12675,6 @@ header img {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
   .h-xl {
     font-size: 2em;
   }
@@ -12670,7 +12686,6 @@ header img {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
   .h-xl {
     font-size: 2em;
   }
@@ -12711,7 +12726,7 @@ header img {
   }
 
   .heading-tags {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
   .animate-font-mobile {
