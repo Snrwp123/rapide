@@ -12664,6 +12664,18 @@ header img {
   }
 }
 
+@media (max-width: 500px) {
+  .hero-track .btn-brown {
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .h-xl {
+    font-size: 2em;
+  }
+}
+
 .h-card._01::after,
 .h-card._02::after,
 .h-card._03::after,
