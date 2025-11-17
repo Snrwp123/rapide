@@ -326,7 +326,7 @@
                                         <p class="h-l lato-font text-color pillars-card-mobile-heading"><b>ARCHITECTURAL
                                                 CALM</b></p>
                                     </div>
-                                    <p class="p-m lato-font text-color" style="margin-bottom: 10px;">Spaces
+                                    <p class="p-s lato-font text-color">Spaces
                                         designed to soothe the nervous system
                                         from the moment
                                         you arrive.
@@ -1441,19 +1441,18 @@
         //     }, 2000);
         // });
         document.addEventListener("DOMContentLoaded", () => {
-    const preloader = document.getElementById("preloader");
-    const mainContent = document.getElementById("main-content");
+                const preloader = document.getElementById("preloader");
+                const mainContent = document.getElementById("main-content");
 
-    // Preloader fix: Always 2.5 seconds max
-    setTimeout(() => {
-        preloader.style.opacity = "0";
-        setTimeout(() => {
-            preloader.style.display = "none";
-            mainContent.style.display = "block";
-        }, 500);
-    }, 2500);
-});
-
+                // Preloader fix: Always 2.5 seconds max
+                setTimeout(() => {
+                    preloader.style.opacity = "0";
+                    setTimeout(() => {
+                        preloader.style.display = "none";
+                        mainContent.style.display = "block";
+                    }, 500);
+                }, 2500);
+            });
     </script>
 </body>
 

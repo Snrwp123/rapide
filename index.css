@@ -1275,6 +1275,13 @@ textarea.w-select {
   .w-col-tiny-12 {
     width: 100%;
   }
+
+  .about-sec-discription {
+    display: flex;
+    justify-content: center!important;
+    text-align: center!important;
+    margin-bottom: 20px;
+  }
 }
 
 .w-widget {
@@ -12673,13 +12680,6 @@ header img {
 
   .heading-tags {
     font-size: 2.5em;
-  }
-
-  .about-sec-discription {
-    display: flex;
-    justify-content: center!important;
-    text-align: center!important;
-    margin-bottom: 10px;
   }
 
   .expand-sticky-card {
