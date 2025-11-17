@@ -61,7 +61,7 @@ body {
   margin-top: 2%;
   gap: 10px;
   flex-wrap: wrap;
-  height: 700px !important;
+  height: 700px;
 }
 
 .card {
@@ -205,9 +205,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .membership-section {
-    padding: 1rem;
-  }
 
   .membership-section h2 {
     font-size: 1.6rem;
@@ -2341,7 +2338,15 @@ textarea.w-select {
 @media screen and (max-width: 479px) {
   .w-tab-link {
     display: block;
+  }  
+   
+  .Corporate-Image1 {
+    height: 300px !important;
   }
+
+    .Corporate-Image2 {
+      height: 300px !important;
+    }
 }
 
 .w-ix-emptyfix:after {
@@ -9360,8 +9365,8 @@ figcaption {
 
   .membership-cards {
     width: 100% !important;
-    gap: 40PX;
-
+    gap: 40px;
+    height: 100%;
   }
 
   .membership-cards P {
@@ -10092,7 +10097,7 @@ figcaption {
 
   .footer-wrapper {
     min-height: auto;
-    padding-top: 60px;
+    padding-top: 0px !important;
     position: relative;
   }
 
@@ -11186,6 +11191,7 @@ figcaption {
     grid-column-gap: 12px;
     grid-row-gap: 12px;
     max-width: none;
+    margin-top: 0px!important;
   }
 
   .h-card {
@@ -12247,6 +12253,15 @@ header {
   #w-node-_37cf6e5b-0515-8a49-026e-59b0c8c03772-87c04fc6 {
     order: 9999;
   }
+
+  .flex-dir {
+    display: flex;
+    justify-content: center !important ;
+    text-align: center !important;
+  }
+  .member-text-center {
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -12579,11 +12594,11 @@ header img {
 
 @media (max-width: 768px) {
   .image-container {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .image-container img {
-    width: 90%;
+    width: 55%;
   }
 }
 
@@ -12719,10 +12734,20 @@ header img {
 
   .footer-last-line {
     text-align: left !important;
+    margin-top: 20px !important;
+  }
+
+  .footer-gap {
+    margin-top: 20px;
   }
 
   .corporates-mobile-width {
-    width: 95% !important;
+    width: 100% !important;
+    padding: 0px !important;
+  }
+
+  .page-heading-mobile {
+    max-width: 100% !important;
   }
 
   .heading-tags {

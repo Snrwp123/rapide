@@ -124,7 +124,7 @@ header.sticky {
 }
 
 .footer-wrapper {
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .footer-section-gradient {
@@ -586,11 +586,16 @@ p {
 @media (max-width: 480px) {
     .footer-last-line {
         text-align: left !important;
+        margin-top: 20px !important;
     }
     .headline {
         font-size: 1.4rem;
-        max-width: 100%;
+        max-width: 80%;
         margin-bottom: 15px;
+    }
+
+    .footer-gap {
+        margin-top: 20px;
     }
 
     .hero-section {

@@ -18,8 +18,14 @@ function getSlidesPerPage() {
   return 2;
 }
 
+function getSlidesPerMove() {
+  const w = window.innerWidth;
+  if (w <= 600) return 1;   // mobile = one dot per slide
+  return 2;                 // desktop = move 2 slides = 3 dots
+}
+
 // Number of slides to move per click
-let slidesPerMove = 2;
+let slidesPerMove = getSlidesPerMove();
 
 // Calculate total dot pages
 function getTotalPages() {
@@ -55,6 +61,7 @@ function initCarousel() {
   originalSlides = Array.from(track.querySelectorAll('.slide:not(.clone)'));
   originalCount = originalSlides.length;
   slidesPerPage = getSlidesPerPage();
+  slidesPerMove = getSlidesPerMove(); // <--- ADD THIS
 
   createClones();
   setWidths();
@@ -68,6 +75,7 @@ function initCarousel() {
   updateDots();
   startAutoplay();
 }
+
 
 function moveSlide(direction = 1) {
   if (isAnimating) return;

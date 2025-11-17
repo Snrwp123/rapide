@@ -68,7 +68,7 @@
       max-width: 96%;
       border-radius: 30px;
       overflow: hidden;
-      height: 500px
+      max-height: 500px;
     }
 
     .corporate-container-img img {
@@ -454,7 +454,7 @@
       .corporate-enquire-section {
         flex-direction: column;
         text-align: center;
-        padding: 30px 20px;
+        padding: 30px 0px;
         gap: 20px;
       }
 
@@ -488,8 +488,8 @@
       }
 
       .about-subtitle {
-        font-size: 20px;
-        max-width: 80%;
+        font-size: 18px;
+        max-width: 90%;
       }
 
       .about-title {
@@ -497,8 +497,15 @@
       }
 
       .corporate-container-img img {
-        height: 250px;
         border-radius: 20px;
+      }
+
+      .corporate-features-section h1 {
+      text-align: center;
+      }
+
+      .corporate-cards-section h1{
+        text-align: center;
       }
 
       .corporate-container {
@@ -515,6 +522,10 @@
         padding: 0px;
         box-sizing: border-box;
         text-align: start;
+      }
+
+      .corporate-enquire-section {
+        padding: 0px;
       }
 
       .corporate-cards-container {
@@ -536,6 +547,7 @@
 
       .enquire-subtitle {
         font-size: 22px;
+        padding-bottom: 10px;
       }
 
       .corporate-title h2 {
