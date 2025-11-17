@@ -1428,18 +1428,32 @@
         };
 
         // JS for preloader
-        window.addEventListener("load", () => {
-            const preloader = document.getElementById("preloader");
-            const mainContent = document.getElementById("main-content");
+        // window.addEventListener("load", () => {
+        //     const preloader = document.getElementById("preloader");
+        //     const mainContent = document.getElementById("main-content");
 
-            setTimeout(() => {
-                preloader.style.opacity = "0";
-                setTimeout(() => {
-                    preloader.style.display = "none";
-                    mainContent.style.display = "block";
-                }, 500);
-            }, 2000);
-        });
+        //     setTimeout(() => {
+        //         preloader.style.opacity = "0";
+        //         setTimeout(() => {
+        //             preloader.style.display = "none";
+        //             mainContent.style.display = "block";
+        //         }, 500);
+        //     }, 2000);
+        // });
+        document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+    const mainContent = document.getElementById("main-content");
+
+    // Preloader fix: Always 2.5 seconds max
+    setTimeout(() => {
+        preloader.style.opacity = "0";
+        setTimeout(() => {
+            preloader.style.display = "none";
+            mainContent.style.display = "block";
+        }, 500);
+    }, 2500);
+});
+
     </script>
 </body>
 
